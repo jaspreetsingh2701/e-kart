@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/e-kart/static/css/main.dcc442b8.chunk.css",
-    "main.js": "/e-kart/static/js/main.f1c74632.chunk.js",
-    "main.js.map": "/e-kart/static/js/main.f1c74632.chunk.js.map",
+    "main.css": "/e-kart/static/css/main.aa89f019.chunk.css",
+    "main.js": "/e-kart/static/js/main.cba82187.chunk.js",
+    "main.js.map": "/e-kart/static/js/main.cba82187.chunk.js.map",
     "runtime-main.js": "/e-kart/static/js/runtime-main.43944ab7.js",
     "runtime-main.js.map": "/e-kart/static/js/runtime-main.43944ab7.js.map",
     "static/css/2.6d7d54d2.chunk.css": "/e-kart/static/css/2.6d7d54d2.chunk.css",
-    "static/js/2.d7593326.chunk.js": "/e-kart/static/js/2.d7593326.chunk.js",
-    "static/js/2.d7593326.chunk.js.map": "/e-kart/static/js/2.d7593326.chunk.js.map",
+    "static/js/2.3b5e9006.chunk.js": "/e-kart/static/js/2.3b5e9006.chunk.js",
+    "static/js/2.3b5e9006.chunk.js.map": "/e-kart/static/js/2.3b5e9006.chunk.js.map",
     "index.html": "/e-kart/index.html",
-    "precache-manifest.3fe33f770cc10947a6b2340c159030b0.js": "/e-kart/precache-manifest.3fe33f770cc10947a6b2340c159030b0.js",
+    "precache-manifest.268d951db75c394134932235eeb5ce06.js": "/e-kart/precache-manifest.268d951db75c394134932235eeb5ce06.js",
     "service-worker.js": "/e-kart/service-worker.js",
     "static/css/2.6d7d54d2.chunk.css.map": "/e-kart/static/css/2.6d7d54d2.chunk.css.map",
-    "static/css/main.dcc442b8.chunk.css.map": "/e-kart/static/css/main.dcc442b8.chunk.css.map",
-    "static/js/2.d7593326.chunk.js.LICENSE.txt": "/e-kart/static/js/2.d7593326.chunk.js.LICENSE.txt",
+    "static/css/main.aa89f019.chunk.css.map": "/e-kart/static/css/main.aa89f019.chunk.css.map",
+    "static/js/2.3b5e9006.chunk.js.LICENSE.txt": "/e-kart/static/js/2.3b5e9006.chunk.js.LICENSE.txt",
     "static/media/_root.scss": "/e-kart/static/media/Verdana.72cf2e80.ttf",
     "static/media/boss.jpg": "/e-kart/static/media/boss.9dfc9092.jpg",
+    "static/media/loader_cms.gif": "/e-kart/static/media/loader_cms.def46ae4.gif",
     "static/media/logo.svg": "/e-kart/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.43944ab7.js",
     "static/css/2.6d7d54d2.chunk.css",
-    "static/js/2.d7593326.chunk.js",
-    "static/css/main.dcc442b8.chunk.css",
-    "static/js/main.f1c74632.chunk.js"
+    "static/js/2.3b5e9006.chunk.js",
+    "static/css/main.aa89f019.chunk.css",
+    "static/js/main.cba82187.chunk.js"
   ]
 }
