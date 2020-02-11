@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/e-kart/static/css/main.6da2771f.chunk.css",
+    "main.css": "/e-kart/static/css/main.88c3f8a4.chunk.css",
     "main.js": "/e-kart/static/js/main.a4feafae.chunk.js",
     "main.js.map": "/e-kart/static/js/main.a4feafae.chunk.js.map",
     "runtime-main.js": "/e-kart/static/js/runtime-main.43944ab7.js",
@@ -9,10 +9,10 @@
     "static/js/2.c03a9fb0.chunk.js": "/e-kart/static/js/2.c03a9fb0.chunk.js",
     "static/js/2.c03a9fb0.chunk.js.map": "/e-kart/static/js/2.c03a9fb0.chunk.js.map",
     "index.html": "/e-kart/index.html",
-    "precache-manifest.d41d017769e9b564dd113278be9c4df7.js": "/e-kart/precache-manifest.d41d017769e9b564dd113278be9c4df7.js",
+    "precache-manifest.9a668f49dbfbaf9bfc53039013a24a25.js": "/e-kart/precache-manifest.9a668f49dbfbaf9bfc53039013a24a25.js",
     "service-worker.js": "/e-kart/service-worker.js",
     "static/css/2.6d7d54d2.chunk.css.map": "/e-kart/static/css/2.6d7d54d2.chunk.css.map",
-    "static/css/main.6da2771f.chunk.css.map": "/e-kart/static/css/main.6da2771f.chunk.css.map",
+    "static/css/main.88c3f8a4.chunk.css.map": "/e-kart/static/css/main.88c3f8a4.chunk.css.map",
     "static/js/2.c03a9fb0.chunk.js.LICENSE.txt": "/e-kart/static/js/2.c03a9fb0.chunk.js.LICENSE.txt",
     "static/media/_root.scss": "/e-kart/static/media/Verdana.72cf2e80.ttf",
     "static/media/loader_cms.gif": "/e-kart/static/media/loader_cms.def46ae4.gif",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.43944ab7.js",
     "static/css/2.6d7d54d2.chunk.css",
     "static/js/2.c03a9fb0.chunk.js",
-    "static/css/main.6da2771f.chunk.css",
+    "static/css/main.88c3f8a4.chunk.css",
     "static/js/main.a4feafae.chunk.js"
   ]
 }
