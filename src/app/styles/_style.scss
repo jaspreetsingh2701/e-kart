@@ -1,0 +1,122 @@
+@import './variables';
+@import './flex';
+
+@font-face {
+    font-family: verdana;
+    src: url('./../assets/Verdana.ttf');
+}
+
+html {
+    flex: 1;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    @extend .f-c;
+    flex: 1;
+    height: 100%;
+    background: #F0F2F5;
+}
+
+#root {
+    @extend .f-c;
+    flex: 1;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+button.btn-primary {
+    background: $dark;
+    cursor: pointer;
+    padding: 0px 20px;
+    height: 35px;
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    transition: all .2s ease;
+    &:hover {
+        background-image: -webkit-linear-gradient(90deg, #34495D 0%, #161616 100%);
+    }
+}
+
+button.btn-full {
+    width: 100%;
+}
+
+.spinner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.3);
+    &--md {
+        height: 50px;
+    }
+    &--lg {
+        height: 115px;
+    }
+}
+
+.no-data {
+    margin: 1em;
+    &--text {
+        font-size: 12px;
+        color: #f16565;
+    }
+}
+
+.alert {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+    &__message-wrapper {
+        flex: 1;
+        display: flex;
+        font-size: 12px;
+        &--message {
+            margin-left: .3em;
+        }
+    }
+    i {
+        cursor: pointer;
+    }
+    &.alert-warning {
+        color: #8a6d3b;
+        background-color: #fcf8e3;
+        border-color: #faebcc;
+    }
+    &.alert-dismiss {
+        padding-right: 25px;
+    }
+    &.alert-visible {
+        opacity: 1;
+    }
+}
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

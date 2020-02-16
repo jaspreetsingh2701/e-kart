@@ -1,0 +1,21 @@
+@import './variables';
+@import './flex';
+
+.sort {
+    @extend .f-r;
+    align-items: center;
+    margin: 12px 0px 12px 12px;
+    &__label {
+        font-size: 13px;
+    }
+}
+
+.sort-mobile {
+    &__label {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        color: $dark;
+    }
+    padding: 1em 2em;
+}

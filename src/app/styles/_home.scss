@@ -1,0 +1,36 @@
+@import './variables';
+@import './flex';
+
+.home {
+    @extend .f-c;
+    flex: 1;
+    padding-top: $root-adjustment-top;
+    &__wrapper {
+        @extend .f-r;
+        height: 100%;
+        &__filter {
+            min-width: 160px;
+            background: #FFFFFF;
+            padding: 25px 25px;
+            box-shadow: 0 1px 8px 0 rgba(0,0,0,.06);
+            margin: 8px 0 0 8px;
+        }
+    }
+    &__filters {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__action {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 50%;
+            height: 35px;
+            border: 1px solid #cacaca;
+            background: white;
+            &:first-child {
+                margin: -1px;
+            }
+        }
+    }
+}

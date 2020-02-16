@@ -1,0 +1,12 @@
+@import './../../styles/flex';
+
+.tabs {
+    .tab {
+        @extend .f-c;
+        justify-content: center;
+        font-size: 13px;
+        padding: 4px 8px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

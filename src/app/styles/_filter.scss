@@ -1,0 +1,21 @@
+@import './variables';
+
+.filter {
+    &__label {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    &__action {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+}
+
+.filter-mobile {
+    padding: 1em 2em;
+    &__label {
+        color: $dark;
+    }
+}

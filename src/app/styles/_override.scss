@@ -1,0 +1,14 @@
+@import './variables';
+
+.input-range__slider {
+    background: $dark;
+    border: 1px solid $dark;
+}
+
+.input-range__track--active {
+    background: $dark;
+}
+
+.input-range__label-container {
+    color: $dark;
+}
