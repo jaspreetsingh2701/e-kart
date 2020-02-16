@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/e-kart/static/css/main.ca0b25ec.chunk.css",
-    "main.js": "/e-kart/static/js/main.9c2636ce.chunk.js",
-    "main.js.map": "/e-kart/static/js/main.9c2636ce.chunk.js.map",
+    "main.js": "/e-kart/static/js/main.83f0871f.chunk.js",
+    "main.js.map": "/e-kart/static/js/main.83f0871f.chunk.js.map",
     "runtime-main.js": "/e-kart/static/js/runtime-main.43944ab7.js",
     "runtime-main.js.map": "/e-kart/static/js/runtime-main.43944ab7.js.map",
     "static/css/2.6d7d54d2.chunk.css": "/e-kart/static/css/2.6d7d54d2.chunk.css",
     "static/js/2.58becf4b.chunk.js": "/e-kart/static/js/2.58becf4b.chunk.js",
     "static/js/2.58becf4b.chunk.js.map": "/e-kart/static/js/2.58becf4b.chunk.js.map",
     "index.html": "/e-kart/index.html",
-    "precache-manifest.5f0d3af60517c082c5b2dab261485f10.js": "/e-kart/precache-manifest.5f0d3af60517c082c5b2dab261485f10.js",
+    "precache-manifest.3bb6e0346e583440454f034997345203.js": "/e-kart/precache-manifest.3bb6e0346e583440454f034997345203.js",
     "service-worker.js": "/e-kart/service-worker.js",
     "static/css/2.6d7d54d2.chunk.css.map": "/e-kart/static/css/2.6d7d54d2.chunk.css.map",
     "static/css/main.ca0b25ec.chunk.css.map": "/e-kart/static/css/main.ca0b25ec.chunk.css.map",
@@ -23,6 +23,6 @@
     "static/css/2.6d7d54d2.chunk.css",
     "static/js/2.58becf4b.chunk.js",
     "static/css/main.ca0b25ec.chunk.css",
-    "static/js/main.9c2636ce.chunk.js"
+    "static/js/main.83f0871f.chunk.js"
   ]
 }
