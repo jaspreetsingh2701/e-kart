@@ -18,9 +18,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Screenshots
 #### `Desktop Version`
-![web view](https://github.com/jaspreetsingh2701/e-kart/blob/master/web-home.JPG?raw=true)
-![web view](https://github.com/jaspreetsingh2701/e-kart/blob/master/web-checkout.JPG?raw=true)
+![web view](https://github.com/jaspreetsingh2701/e-kart/blob/master/web-home.JPG)
+![web view](https://github.com/jaspreetsingh2701/e-kart/blob/master/web-checkout.JPG)
 
 #### `Mobile Version`
-![mobile view](https://github.com/jaspreetsingh2701/e-kart/blob/master/mob-home.JPG?raw=true)
-![mobile view](https://github.com/jaspreetsingh2701/e-kart/blob/master/mob-checkout.JPG?raw=true)
+![mobile view](https://github.com/jaspreetsingh2701/e-kart/blob/master/mob-home.JPG)
+![mobile view](https://github.com/jaspreetsingh2701/e-kart/blob/master/mob-checkout.JPG)
