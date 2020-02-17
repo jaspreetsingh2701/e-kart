@@ -26,6 +26,7 @@ class HomeComponent extends React.Component {
             min: 0,
             max: 0
         },
+        searchKeyword: '',
         isFiltered: false,
         cartItemsCount: 0,
         width: window.innerWidth,
@@ -67,18 +68,18 @@ class HomeComponent extends React.Component {
     }
 
     render() {
-        const { filteredProducts, range, value, cartItemsCount, width, isSortModal, isFilterModal } = this.state;
+        const { range, value, cartItemsCount, width, isSortModal, isFilterModal } = this.state;
         const { requestAddToCartRequest, showSpinner } = this.props;
-        const { priceRangeFilter, sortedProducts, changeRangeValue, showSortModal, showFilterModal, closeModal, searchCallback } = this;
+        const { priceRangeFilter, sortedProducts, changeRangeValue, showSortModal, showFilterModal, closeModal, searchCallback, getResults } = this;
         const isMobile = width <= 500;
         return (
             <>
                 <Header cartItemsCount={cartItemsCount} searchCallback={searchCallback} />
                 <section className="home">
                     {showSpinner && <Spinner size="lg" />}
-                    {!showSpinner && filteredProducts.length === 0 && <NoData />}
+                    {!showSpinner && getResults().length === 0 && <NoData />}
                     <div className="home__wrapper">
-                        {filteredProducts && filteredProducts.length > 0 && <div className="f-c">
+                        {getResults().length > 0 && <div className="f-c">
                             {isMobile && <div className="home__filters">
                                 <div className="home__filters__action" onClick={showSortModal}>
                                     <i className="fa fa-sort" />&nbsp;Sort
@@ -97,12 +98,12 @@ class HomeComponent extends React.Component {
                             </>}
                             <div className="f-r" style={{ height: '100%' }}>
                                 {!isMobile && <div className="home__wrapper__filter">
-                                    <Filter showSpinner={filteredProducts && filteredProducts.length > 0 ? false : true} range={range} value={value} changeRangeValue={changeRangeValue} priceRangeFilter={priceRangeFilter} />
+                                    <Filter range={range} value={value} changeRangeValue={changeRangeValue} priceRangeFilter={priceRangeFilter} />
                                 </div>}
                                 <div className="f-c">
                                     {!isMobile && <Sort sortedProducts={sortedProducts} />}
                                     <Products
-                                        products={filteredProducts}
+                                        products={getResults()}
                                         requestAddToCartRequest={requestAddToCartRequest}
                                     />
                                 </div>
@@ -112,6 +113,15 @@ class HomeComponent extends React.Component {
                 </section>
             </>
         );
+    }
+
+    getResults = () => {
+        const { searchKeyword, products, isFiltered, filteredProducts } = this.state;
+        let items = isFiltered ? filteredProducts : products;
+        if (searchKeyword.length > 0) {
+            items = items.filter(product => product.name.toLowerCase().includes(searchKeyword.toLowerCase()));
+        }
+        return items;
     }
 
     handleWindowSizeChange = () => {
@@ -124,9 +134,9 @@ class HomeComponent extends React.Component {
     };
 
     sortedProducts = (key, isAsc = false) => {
-        const { products } = this.state;
+        const { filteredProducts } = this.state;
         this.setState({
-            filteredProducts: products.sort(sort_by(key, isAsc, HomeComponent.calculateDiscount))
+            filteredProducts: filteredProducts.sort(sort_by(key, isAsc, HomeComponent.calculateDiscount))
         });
     }
 
@@ -139,9 +149,8 @@ class HomeComponent extends React.Component {
     };
 
     searchCallback = e => {
-        const { products } = this.state;
         this.setState({
-            filteredProducts: products.filter(product => product.name.toLowerCase().includes(e.target.value.toLowerCase()))
+            searchKeyword: e.target.value
         });
     };
 
