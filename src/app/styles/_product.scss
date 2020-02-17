@@ -1,9 +1,14 @@
 @import './flex';
 
+@media only screen and (max-width: 500px) {
+    .products {
+        justify-content: center;
+    }
+}
+
 .products {
     @extend .f-r;
     flex-wrap: wrap;
-    // justify-content: center;
     &::after {
         content: "";
         flex: auto;

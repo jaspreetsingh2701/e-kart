@@ -77,32 +77,37 @@ class HomeComponent extends React.Component {
                 <section className="home">
                     {showSpinner && <Spinner size="lg" />}
                     {!showSpinner && filteredProducts.length === 0 && <NoData />}
-                    {isMobile && <div className="home__filters">
-                        <div className="home__filters__action" onClick={showSortModal}>
-                            <i className="fa fa-sort" />&nbsp;Sort
-                            </div>
-                        <div className="home__filters__action" onClick={showFilterModal}>
-                            <i className="fa fa-filter" />&nbsp;Filter
-                            </div>
-                    </div>}
-                    {isMobile && isSortModal && <Modal closeModal={closeModal}>
-                        <Sort isMobile={true} sortedProducts={sortedProducts} />
-                    </Modal>}
-                    {isMobile && isFilterModal && <Modal closeModal={closeModal}>
-                        <Filter isMobile={true} range={range} value={value} changeRangeValue={changeRangeValue} priceRangeFilter={priceRangeFilter} />
-                    </Modal>}
                     <div className="home__wrapper">
-                        {!isMobile && <div className="home__wrapper__filter">
-                            <Filter showSpinner={filteredProducts && filteredProducts.length > 0 ? false : true} range={range} value={value} changeRangeValue={changeRangeValue} priceRangeFilter={priceRangeFilter} />
-                        </div>}
                         {filteredProducts && filteredProducts.length > 0 && <div className="f-c">
-                            {!isMobile && <Sort sortedProducts={sortedProducts} />}
-                            <Products
-                                products={filteredProducts}
-                                requestAddToCartRequest={requestAddToCartRequest}
-                            />
-                        </div>
-                        }
+                            {isMobile && <div className="home__filters">
+                                <div className="home__filters__action" onClick={showSortModal}>
+                                    <i className="fa fa-sort" />&nbsp;Sort
+                            </div>
+                                <div className="home__filters__action" onClick={showFilterModal}>
+                                    <i className="fa fa-filter" />&nbsp;Filter
+                            </div>
+                            </div>}
+                            {isMobile && <>
+                                {isSortModal && <Modal closeModal={closeModal}>
+                                    <Sort isMobile={true} sortedProducts={sortedProducts} />
+                                </Modal>}
+                                {isFilterModal && <Modal closeModal={closeModal}>
+                                    <Filter isMobile={true} range={range} value={value} changeRangeValue={changeRangeValue} priceRangeFilter={priceRangeFilter} />
+                                </Modal>}
+                            </>}
+                            <div className="f-r" style={{ height: '100%' }}>
+                                {!isMobile && <div className="home__wrapper__filter">
+                                    <Filter showSpinner={filteredProducts && filteredProducts.length > 0 ? false : true} range={range} value={value} changeRangeValue={changeRangeValue} priceRangeFilter={priceRangeFilter} />
+                                </div>}
+                                <div className="f-c">
+                                    {!isMobile && <Sort sortedProducts={sortedProducts} />}
+                                    <Products
+                                        products={filteredProducts}
+                                        requestAddToCartRequest={requestAddToCartRequest}
+                                    />
+                                </div>
+                            </div>
+                        </div>}
                     </div>
                 </section>
             </>

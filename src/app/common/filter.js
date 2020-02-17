@@ -1,13 +1,11 @@
 import React from 'react';
 import InputRange from 'react-input-range';
 import './../styles/_filter.scss';
-import Spinner from './spinner';
 
 const Filter = ({ showSpinner, isMobile = false, range, value, changeRangeValue, priceRangeFilter }) => {
     return (
         <div className={`filter${isMobile ? '-mobile' : ''}`}>
             <div className="filter__label">FILTER</div>
-            {showSpinner && <Spinner />}
             {!showSpinner && <>
                 <InputRange
                     step={100}
