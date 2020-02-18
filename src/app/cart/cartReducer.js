@@ -77,11 +77,9 @@ export const removeItemFromCart = (cartItems, productID) => {
 };
 
 export const removeProductFromCart = (cartItems, productID) => {
-    const existingCartProduct = cartItems.products.find(
-        product => product.productID === productID
-    );
+    const existingCartProduct = cartItems.products.find(product => product.productID === productID);
     if (existingCartProduct) {
-        productCounter--;
+        productCounter = productCounter - existingCartProduct.quantity;
         return {
             products: cartItems.products.filter(product => product.productID !== productID),
             totalProducts: productCounter
